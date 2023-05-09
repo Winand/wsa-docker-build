@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  wsa-builder:
+    build: .
+    privileged: true # required by mount command
+    volumes:
+      - ./output:/MagiskOnWSALocal/output
