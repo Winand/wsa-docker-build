@@ -8,7 +8,7 @@ ARG gappsVariant=pico
 ARG rootSol=none
 
 RUN apt update && \
-    apt install -y git python3 aria2 sudo patchelf unzip qemu-utils attr && \
+    apt install -y git python3 python3-requests aria2 sudo patchelf unzip qemu-utils attr && \
     apt clean
 RUN git clone https://github.com/LSPosed/MagiskOnWSALocal.git
 # COPY ./download /MagiskOnWSALocal/download
