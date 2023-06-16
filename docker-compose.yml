@@ -1,7 +1,10 @@
 version: '3.9'
 services:
   wsa-builder:
-    build: .
+    build:
+      context: .
+      # args:
+      #   releaseType: retail # retail, RP, WIS (Insider Slow), WIF (Insider Fast)
     privileged: true # required by mount command
     volumes:
       # - ./download:/MagiskOnWSALocal/download
